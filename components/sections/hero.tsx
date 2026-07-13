@@ -22,8 +22,8 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
       {/* Background glowing effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[150vw] h-[150vw] sm:w-[800px] sm:h-[800px] bg-primary/20 blur-[80px] sm:blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute top-1/4 left-1/4 w-[100vw] h-[100vw] sm:w-[400px] sm:h-[400px] bg-blue-500/20 blur-[60px] sm:blur-[100px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] sm:w-[800px] sm:h-[800px] bg-primary/20 blur-[80px] sm:blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/4 left-1/4 w-[200px] h-[200px] sm:w-[400px] sm:h-[400px] bg-blue-500/20 blur-[60px] sm:blur-[100px] rounded-full pointer-events-none" />
 
       <div className="container px-4 sm:px-6 relative z-10 flex flex-col items-center text-center">
         <motion.div
@@ -79,16 +79,16 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-6 sm:px-0"
         >
-          <Button size="lg" className="w-full sm:w-auto rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all">
-            <Link href="#projects" className="flex items-center gap-2 justify-center w-full">
+          <Button size="lg" className="w-full sm:w-auto rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all" render={<Link href="#projects" />}>
+            <span className="flex items-center gap-2 justify-center w-full">
               View Work <ArrowRight className="w-4 h-4" />
-            </Link>
+            </span>
           </Button>
           
-          <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full px-8 glass hover:bg-white/5 hover:scale-105 transition-all">
-            <Link href="/resume.pdf" target="_blank" className="flex items-center gap-2 justify-center w-full">
+          <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full px-8 glass hover:bg-white/5 hover:scale-105 transition-all" render={<Link href="/resume.pdf" target="_blank" />}>
+            <span className="flex items-center gap-2 justify-center w-full">
               <Download className="w-4 h-4" /> Resume
-            </Link>
+            </span>
           </Button>
         </motion.div>
 

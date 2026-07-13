@@ -97,10 +97,10 @@ export function ContactSection() {
             </div>
 
             <div className="mt-8">
-              <Button variant="outline" size="lg" className="rounded-full glass hover:bg-white/5 border-white/10" asChild>
-                <Link href="https://cal.com" target="_blank" className="flex items-center gap-2">
+              <Button variant="outline" size="lg" className="rounded-full glass hover:bg-white/5 border-white/10" render={<Link href="https://cal.com" target="_blank" />}>
+                <span className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4" /> Book a Discovery Call
-                </Link>
+                </span>
               </Button>
             </div>
           </motion.div>
