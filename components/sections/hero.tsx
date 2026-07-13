@@ -79,15 +79,9 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full px-6 sm:px-0"
         >
-          <Button size="lg" className="w-full sm:w-auto rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all" render={<Link href="#projects" />}>
+          <Button size="lg" nativeButton={false} className="w-full sm:w-auto rounded-full px-8 bg-foreground text-background hover:bg-foreground/90 hover:scale-105 transition-all" render={<Link href="#projects" />}>
             <span className="flex items-center gap-2 justify-center w-full">
               View Work <ArrowRight className="w-4 h-4" />
-            </span>
-          </Button>
-          
-          <Button size="lg" variant="outline" className="w-full sm:w-auto rounded-full px-8 glass hover:bg-accent hover:scale-105 transition-all" render={<Link href="/resume.pdf" target="_blank" />}>
-            <span className="flex items-center gap-2 justify-center w-full">
-              <Download className="w-4 h-4" /> Resume
             </span>
           </Button>
         </motion.div>

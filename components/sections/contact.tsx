@@ -97,7 +97,7 @@ export function ContactSection() {
             </div>
 
             <div className="mt-8">
-              <Button variant="outline" size="lg" className="rounded-full glass hover:bg-accent border-border" render={<Link href="https://cal.com" target="_blank" />}>
+              <Button variant="outline" size="lg" nativeButton={false} className="rounded-full glass hover:bg-accent border-border" render={<Link href="https://cal.com" target="_blank" />}>
                 <span className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4" /> Book a Discovery Call
                 </span>

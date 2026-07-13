@@ -40,7 +40,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased overflow-x-hidden`}
       suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col relative bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
+      <body suppressHydrationWarning className="min-h-full flex flex-col relative bg-background text-foreground overflow-x-hidden selection:bg-primary/30">
         <Providers>
           <div className="fixed inset-0 z-[-1] bg-grid-white/[0.02] bg-[size:50px_50px]" />
           <div className="fixed inset-0 z-[-1] bg-background/90 backdrop-blur-[100px]" />

@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 import { featuredProjects } from "@/lib/data";
 
 export default function CaseStudyPage() {
@@ -74,9 +75,14 @@ export default function CaseStudyPage() {
         transition={{ duration: 0.8, delay: 0.2 }}
         className="container mx-auto px-6 mb-24"
       >
-        <div className="w-full aspect-[21/9] rounded-3xl overflow-hidden glass-card flex items-center justify-center bg-secondary/20 relative">
-           <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent" />
-           <p className="text-2xl text-muted-foreground font-medium">Hero Image / Video Showcase</p>
+        <div className="w-full aspect-[21/9] rounded-3xl overflow-hidden glass-card relative">
+           <Image 
+             src={project.image} 
+             alt={project.title} 
+             fill 
+             className="object-cover"
+           />
+           <div className="absolute inset-0 bg-gradient-to-tr from-black/40 via-transparent to-primary/10" />
         </div>
       </motion.section>
 

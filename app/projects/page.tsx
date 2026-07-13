@@ -6,40 +6,17 @@ import { featuredProjects } from "@/lib/data";
 import { ArrowUpRight, Search } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 import { Input } from "@/components/ui/input";
 
 const categories = ["All", "React", "Next.js", "MERN", "AI", "Full Stack"];
 
-// Duplicating projects to make a larger list for the projects page
-const allProjects = [
-  ...featuredProjects,
-  {
-    id: "project-4",
-    title: "Real-time Chat App",
-    description: "A fast, scalable chat application using WebSockets and Redis.",
-    image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?auto=format&fit=crop&q=80&w=1000",
-    techStack: ["MERN", "Socket.io", "Tailwind"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    features: ["Real-time messaging", "Typing indicators", "Read receipts"]
-  },
-  {
-    id: "project-5",
-    title: "AI Image Generator",
-    description: "A web interface for generating images using custom stable diffusion models.",
-    image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?auto=format&fit=crop&q=80&w=1000",
-    techStack: ["Next.js", "AI", "Python", "FastAPI"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-    features: ["Text to image", "Image variations", "Prompt history"]
-  }
-];
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [searchQuery, setSearchQuery] = useState("");
 
-  const filteredProjects = allProjects.filter((project) => {
+  const filteredProjects = featuredProjects.filter((project) => {
     const matchesCategory = activeCategory === "All" || project.techStack.includes(activeCategory) || 
       (activeCategory === "Full Stack" && project.techStack.includes("Next.js") && project.techStack.includes("Supabase")); // simple logic for demo
     
@@ -112,9 +89,12 @@ export default function ProjectsPage() {
           >
             <div className="aspect-video relative overflow-hidden bg-muted">
               <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500 z-10" />
-              <div className="w-full h-full flex items-center justify-center text-muted-foreground bg-secondary/20">
-                Image Placeholder
-              </div>
+              <Image 
+                src={project.image} 
+                alt={project.title} 
+                fill 
+                className="object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
             
             <div className="p-8 flex flex-col flex-grow">

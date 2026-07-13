@@ -5,6 +5,7 @@ import { featuredProjects } from "@/lib/data";
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 import { useRef } from "react";
 
 export function FeaturedProjectsSection() {
@@ -62,10 +63,12 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
     >
       {/* Project Image */}
       <div className="w-full lg:w-1/2 relative group rounded-3xl overflow-hidden aspect-[4/3] glass-card">
-        {/* Placeholder for image */}
-        <div className="absolute inset-0 bg-muted/30 flex items-center justify-center text-muted-foreground text-sm">
-          {project.title} Image Placeholder
-        </div>
+        <Image 
+          src={project.image} 
+          alt={project.title} 
+          fill 
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+        />
         <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
         
         {/* Decorative elements */}
