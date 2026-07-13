@@ -12,7 +12,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       enableSystem={true}
       disableTransitionOnChange
     >
-      <ReactLenis root options={{ lerp: 0.05, duration: 1.5, smoothWheel: true, smoothTouch: false, gestureDirection: "vertical" }}>
+      <ReactLenis root options={{ lerp: 0.05, duration: 1.5, smoothWheel: true }}>
         {children}
       </ReactLenis>
     </NextThemesProvider>
