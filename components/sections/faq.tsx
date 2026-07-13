@@ -35,7 +35,7 @@ export function FaqSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="glass p-8 md:p-12 rounded-3xl"
         >
-          <Accordion type="single" collapsible className="w-full">
+          <Accordion className="w-full">
             {faqsData.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="border-b border-white/10 last:border-0 py-2">
                 <AccordionTrigger className="text-left text-lg hover:text-primary transition-colors hover:no-underline">

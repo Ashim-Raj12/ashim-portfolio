@@ -25,11 +25,9 @@ export function Navbar() {
       {/* Mobile Drawer */}
       <div className="md:hidden">
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild>
-            <button className="p-2 -mr-2 text-muted-foreground hover:text-foreground transition-colors focus:outline-none">
+          <SheetTrigger className="p-2 -mr-2 text-muted-foreground hover:text-foreground transition-colors focus:outline-none">
               <Menu className="w-6 h-6" />
               <span className="sr-only">Toggle Menu</span>
-            </button>
           </SheetTrigger>
           <SheetContent side="right" className="w-[85vw] sm:w-[350px] bg-background/95 backdrop-blur-xl border-white/10 pt-16">
             <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
