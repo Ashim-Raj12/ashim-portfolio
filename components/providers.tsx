@@ -9,10 +9,10 @@ export function Providers({ children }: { children: React.ReactNode }) {
     <NextThemesProvider
       attribute="class"
       defaultTheme="dark"
-      enableSystem={false}
+      enableSystem={true}
       disableTransitionOnChange
     >
-      <ReactLenis root options={{ lerp: 0.05, duration: 1.5, smoothWheel: true }}>
+      <ReactLenis root options={{ lerp: 0.05, duration: 1.5, smoothWheel: true, smoothTouch: false, gestureDirection: "vertical" }}>
         {children}
       </ReactLenis>
     </NextThemesProvider>

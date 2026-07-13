@@ -107,14 +107,14 @@ function ProjectCard({ project, index }: { project: any, index: number }) {
           <Link 
             href={project.liveUrl}
             target="_blank"
-            className="p-3 rounded-full glass hover:bg-white/5 transition-colors"
+            className="p-3 rounded-full glass hover:bg-accent transition-colors"
           >
             <ArrowUpRight className="w-5 h-5" />
           </Link>
           <Link 
             href={project.githubUrl}
             target="_blank"
-            className="p-3 rounded-full glass hover:bg-white/5 transition-colors"
+            className="p-3 rounded-full glass hover:bg-accent transition-colors"
           >
             <FaGithub className="w-5 h-5" />
           </Link>

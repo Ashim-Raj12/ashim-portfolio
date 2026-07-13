@@ -40,20 +40,20 @@ export function ContactSection() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium text-muted-foreground">Name</label>
-                    <Input id="name" placeholder="John Doe" className="bg-background/50 border-white/10 focus-visible:ring-primary h-12" />
+                    <Input id="name" placeholder="John Doe" className="bg-background/50 border-border focus-visible:ring-primary h-12" />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="email" className="text-sm font-medium text-muted-foreground">Email</label>
-                    <Input id="email" type="email" placeholder="john@example.com" className="bg-background/50 border-white/10 focus-visible:ring-primary h-12" />
+                    <Input id="email" type="email" placeholder="john@example.com" className="bg-background/50 border-border focus-visible:ring-primary h-12" />
                   </div>
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="subject" className="text-sm font-medium text-muted-foreground">Subject</label>
-                  <Input id="subject" placeholder="Project Inquiry" className="bg-background/50 border-white/10 focus-visible:ring-primary h-12" />
+                  <Input id="subject" placeholder="Project Inquiry" className="bg-background/50 border-border focus-visible:ring-primary h-12" />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium text-muted-foreground">Message</label>
-                  <Textarea id="message" placeholder="Tell me about your project..." className="bg-background/50 border-white/10 focus-visible:ring-primary min-h-[150px] resize-none" />
+                  <Textarea id="message" placeholder="Tell me about your project..." className="bg-background/50 border-border focus-visible:ring-primary min-h-[150px] resize-none" />
                 </div>
                 <Button size="lg" className="w-full h-12 text-base font-semibold rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 transition-all">
                   Send Message
@@ -97,7 +97,7 @@ export function ContactSection() {
             </div>
 
             <div className="mt-8">
-              <Button variant="outline" size="lg" className="rounded-full glass hover:bg-white/5 border-white/10" render={<Link href="https://cal.com" target="_blank" />}>
+              <Button variant="outline" size="lg" className="rounded-full glass hover:bg-accent border-border" render={<Link href="https://cal.com" target="_blank" />}>
                 <span className="flex items-center gap-2">
                   <MessageSquare className="w-4 h-4" /> Book a Discovery Call
                 </span>

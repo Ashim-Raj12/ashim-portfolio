@@ -37,7 +37,7 @@ export function FaqSection() {
         >
           <Accordion className="w-full">
             {faqsData.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border-b border-white/10 last:border-0 py-2">
+              <AccordionItem key={index} value={`item-${index}`} className="border-b border-border last:border-0 py-2">
                 <AccordionTrigger className="text-left text-lg hover:text-primary transition-colors hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>

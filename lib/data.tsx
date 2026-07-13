@@ -74,48 +74,93 @@ export const skillsData = [
 
 export const featuredProjects = [
   {
-    id: "project-1",
-    title: "AI-Powered CRM Platform",
-    description: "A comprehensive customer relationship management system with integrated AI for predictive analytics and automated email responses.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1000",
-    techStack: ["Next.js", "TypeScript", "Tailwind", "Supabase", "OpenAI API"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    id: "lawcotpus",
+    title: "Lawcotpus",
+    description: "A comprehensive legal tech application designed to streamline case management and legal research for professionals.",
+    image: "https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["React", "TypeScript", "Node.js", "MongoDB"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Ashim-Raj12/lawcotpus",
     features: [
-      "Real-time analytics dashboard",
-      "AI-driven lead scoring",
-      "Automated follow-up emails",
-      "Role-based access control"
+      "Case management dashboard",
+      "Legal document analysis",
+      "Client portal",
+      "Automated scheduling"
     ]
   },
   {
-    id: "project-2",
-    title: "E-Commerce Experience",
-    description: "A high-performance headless e-commerce store featuring a custom 3D product viewer and seamless checkout flow.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=1000",
-    techStack: ["React", "Node.js", "MongoDB", "Stripe", "Three.js"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    id: "urbannest",
+    title: "UrbanNest",
+    description: "A modern real estate and property management platform that connects buyers, sellers, and agents seamlessly.",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["Next.js", "Tailwind CSS", "Supabase", "Prisma"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Ashim-Raj12/UrbanNest",
     features: [
-      "3D product customization",
-      "Stripe payment integration",
-      "Inventory management system",
-      "Order tracking"
+      "Interactive property maps",
+      "Virtual tour integration",
+      "Advanced search filters",
+      "Agent messaging"
     ]
   },
   {
-    id: "project-3",
-    title: "Developer Workflow Tool",
-    description: "A desktop application for developers to manage code snippets, environment variables, and deployment scripts locally.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
-    techStack: ["Electron", "React", "TypeScript", "Tailwind"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    id: "subtrack",
+    title: "Subtrack",
+    description: "An intuitive subscription tracking application that helps users monitor and manage their recurring expenses.",
+    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["React", "Firebase", "TypeScript", "Redux"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Ashim-Raj12/subtrack",
     features: [
-      "Local encryption for secrets",
-      "Cloud sync option",
-      "Syntax highlighting",
-      "Quick-copy shortcuts"
+      "Expense visualization",
+      "Renewal alerts",
+      "Multi-currency support",
+      "Spending analytics"
+    ]
+  },
+  {
+    id: "vedahealth",
+    title: "Vedahealth",
+    description: "A holistic healthcare and wellness platform offering personalized health tracking and telehealth integrations.",
+    image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["Next.js", "GraphQL", "Node.js", "PostgreSQL"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Ashim-Raj12/vedahealth",
+    features: [
+      "Patient health dashboard",
+      "Appointment booking",
+      "Telemedicine video calls",
+      "Electronic health records"
+    ]
+  },
+  {
+    id: "hollow-fabric",
+    title: "Hollow Fabric Clothing",
+    description: "A premium headless e-commerce store for a modern clothing brand, featuring seamless checkout and dynamic inventory.",
+    image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["React", "Shopify API", "Framer Motion", "Tailwind CSS"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Ashim-Raj12/hollow-fabric-clothing",
+    features: [
+      "Dynamic cart system",
+      "Stripe payment gateway",
+      "Product filtering",
+      "Responsive design"
+    ]
+  },
+  {
+    id: "univibe",
+    title: "Univibe Connect",
+    description: "A university-centric social networking platform designed to foster communication and collaboration among students.",
+    image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=1000",
+    techStack: ["Next.js", "Socket.io", "MongoDB", "Express"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/Ashim-Raj12/univibe-connect",
+    features: [
+      "Real-time chat",
+      "Event discovery",
+      "Study group forums",
+      "Peer-to-peer networking"
     ]
   }
 ];
